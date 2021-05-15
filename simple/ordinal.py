@@ -1,4 +1,4 @@
-def _ordinal_suffix(value):
+def __ordinal_suffix(value):
     s = str(value)
     if s.endswith('11') or s.endswith('12') or s.endswith('13'):
         return 'th'
@@ -13,4 +13,4 @@ def _ordinal_suffix(value):
 
 
 def ordinal(value):
-    return str(value) + _ordinal_suffix(value)
+    return str(value) + __ordinal_suffix(value)
